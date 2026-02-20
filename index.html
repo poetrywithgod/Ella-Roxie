@@ -3,165 +3,198 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ella — Techpreneur & Digital Builder</title>
+  <title>Ella · techpreneur & builder</title>
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- subtle inter font improvement -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    /* smooth anchor offset for sticky header */
+    html { scroll-behavior: smooth; }
+    section { scroll-margin-top: 80px; }
+  </style>
 </head>
+<body class="bg-stone-50 text-stone-800 antialiased">
 
-<body class="bg-slate-50 text-slate-800 antialiased">
-
-  <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
+  <!-- header – cleaner, warmer palette -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-amber-100/70 shadow-sm">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-      <!-- Logo -->
-      <h1 class="text-2xl font-bold text-indigo-600">I am Ella</h1>
+      <!-- logo with earthy / tech touch -->
+      <h1 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-orange-600">
+        ella<span class="text-amber-600">.</span>
+      </h1>
 
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex space-x-6 font-medium">
-        <a href="#mission" class="hover:text-indigo-600 transition">Mission</a>
-        <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
-        <a href="#journey" class="hover:text-indigo-600 transition">Journey</a>
-        <a href="#connect" class="hover:text-indigo-600 transition">Connect</a>
+      <!-- desktop nav -->
+      <nav class="hidden md:flex space-x-8 font-medium text-stone-600">
+        <a href="#mission" class="hover:text-amber-700 transition border-b-2 border-transparent hover:border-amber-400 pb-1">mission</a>
+        <a href="#skills" class="hover:text-amber-700 transition border-b-2 border-transparent hover:border-amber-400 pb-1">skills</a>
+        <a href="#journey" class="hover:text-amber-700 transition border-b-2 border-transparent hover:border-amber-400 pb-1">journey</a>
+        <a href="#connect" class="hover:text-amber-700 transition border-b-2 border-transparent hover:border-amber-400 pb-1">connect</a>
       </nav>
 
-      <!-- Hamburger Button -->
-      <button
-        id="menu-btn"
-        aria-label="Toggle menu"
-        aria-expanded="false"
-        class="md:hidden flex flex-col justify-center items-center space-y-1"
-      >
-        <span class="block w-6 h-0.5 bg-slate-800"></span>
-        <span class="block w-6 h-0.5 bg-slate-800"></span>
-        <span class="block w-6 h-0.5 bg-slate-800"></span>
+      <!-- hamburger (refined) -->
+      <button id="menu-btn" aria-label="Toggle menu" aria-expanded="false"
+              class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-lg border border-stone-200 hover:border-amber-300 transition">
+        <span class="block w-5 h-0.5 bg-stone-700 rounded-full"></span>
+        <span class="block w-5 h-0.5 bg-stone-700 mt-1.5 rounded-full"></span>
+        <span class="block w-5 h-0.5 bg-stone-700 mt-1.5 rounded-full"></span>
       </button>
     </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-      <nav class="flex flex-col px-6 py-4 space-y-4 font-medium">
-        <a href="#mission" class="hover:text-indigo-600 transition">Mission</a>
-        <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
-        <a href="#journey" class="hover:text-indigo-600 transition">Journey</a>
-        <a href="#connect" class="hover:text-indigo-600 transition">Connect</a>
+    <!-- mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-amber-100">
+      <nav class="flex flex-col px-6 py-5 space-y-4 font-medium text-stone-700">
+        <a href="#mission" class="hover:text-amber-700 py-1">mission</a>
+        <a href="#skills" class="hover:text-amber-700 py-1">skills</a>
+        <a href="#journey" class="hover:text-amber-700 py-1">journey</a>
+        <a href="#connect" class="hover:text-amber-700 py-1">connect</a>
       </nav>
     </div>
   </header>
 
-  <!-- Main -->
   <main>
 
-    <!-- Hero -->
-    <section class="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white">
-      <div class="max-w-7xl mx-auto px-6 py-28 text-center">
-        <h2 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-          Building the Future<br class="hidden md:block" />
-          Through Technology & Vision
+    <!-- hero – sophisticated gradient (amber/peach/soft rose) -->
+    <section class="bg-gradient-to-br from-amber-800 via-orange-600 to-rose-600 text-white">
+      <div class="max-w-7xl mx-auto px-6 py-28 text-center md:py-32">
+        <h2 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight">
+          building the future<br class="hidden md:block" />
+          <span class="text-amber-100">with code & clarity</span>
         </h2>
         <p class="max-w-2xl mx-auto text-lg md:text-xl text-white/90 mb-10">
-          Hi, I am <span class="font-semibold">Ella</span> a techpreneur focused on turning ideas
-          into scalable digital solutions.
+          I'm <span class="font-semibold border-b-2 border-amber-300">Ella</span> – techpreneur & digital builder.
+          I turn ambitious ideas into scalable, human‑centered products.
         </p>
-        <div class="flex justify-center gap-4">
-          <a href="#connect" class="bg-white text-indigo-700 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition">
-            Work With Me
+        <div class="flex justify-center gap-5 flex-wrap">
+          <a href="#connect" class="bg-white text-amber-800 px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl hover:bg-amber-50 transition-all">
+            work with me
           </a>
-          <a href="#mission" class="border border-white/40 px-8 py-4 rounded-xl hover:bg-white/10 transition">
-            Learn More
+          <a href="#mission" class="border border-white/40 backdrop-blur-sm px-8 py-4 rounded-xl font-semibold hover:bg-white/15 transition">
+            explore my world
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Mission -->
-    <section id="mission" class="max-w-6xl mx-auto px-6 py-20 text-center">
-      <h3 class="text-3xl font-bold mb-6">My Mission</h3>
-      <p class="text-lg text-slate-600 max-w-3xl mx-auto">
-        To empower individuals and businesses by leveraging technology,
-        innovation, and strategic thinking to solve real-world problems
-        and create sustainable digital products.
+    <!-- mission – minimal, warm, airy -->
+    <section id="mission" class="max-w-4xl mx-auto px-6 py-28 text-center">
+      <span class="text-sm uppercase tracking-[0.2em] text-amber-600 font-semibold">north star</span>
+      <h3 class="text-4xl font-bold mt-3 mb-6 text-stone-800">my mission</h3>
+      <p class="text-lg text-stone-600 leading-relaxed max-w-3xl mx-auto">
+        to empower builders, dreamers, and businesses by merging 
+        <span class="font-medium text-amber-700">deep tech</span> with 
+        <span class="font-medium text-amber-700">human insight</span>. 
+        I create digital products that don’t just work — they matter.
       </p>
+      <!-- subtle decorative line -->
+      <div class="w-24 h-1 bg-amber-300 mx-auto mt-10 rounded-full"></div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="bg-white">
-      <div class="max-w-7xl mx-auto px-6 py-20">
-        <h3 class="text-3xl font-bold text-center mb-12">What I Do</h3>
+    <!-- skills – cards with soft palette & refined depth -->
+    <section id="skills" class="bg-amber-50/50 py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center">
+          <span class="text-sm uppercase tracking-[0.2em] text-amber-600 font-semibold">what i do</span>
+          <h3 class="text-4xl font-bold mt-2 mb-14 text-stone-800">core capabilities</h3>
+        </div>
 
         <div class="grid gap-8 md:grid-cols-3">
-          <div class="p-8 rounded-2xl border hover:shadow-lg transition">
-            <h4 class="text-xl font-semibold mb-3">💻 Software Development</h4>
-            <p class="text-slate-600">
-              Designing and building efficient, scalable web and application systems.
+          <div class="group p-8 rounded-3xl bg-white border border-amber-200/60 shadow-sm hover:shadow-xl hover:border-amber-300 transition-all duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-3xl mb-5 group-hover:scale-105 transition">💻</div>
+            <h4 class="text-xl font-semibold mb-3 text-stone-800">software development</h4>
+            <p class="text-stone-600 leading-relaxed">
+              scalable web apps, clean architecture, and performant systems — built to evolve.
             </p>
           </div>
 
-          <div class="p-8 rounded-2xl border hover:shadow-lg transition">
-            <h4 class="text-xl font-semibold mb-3">🚀 Tech Entrepreneurship</h4>
-            <p class="text-slate-600">
-              Transforming ideas into viable products using lean and growth-driven strategies.
+          <div class="group p-8 rounded-3xl bg-white border border-amber-200/60 shadow-sm hover:shadow-xl hover:border-amber-300 transition-all duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-3xl mb-5 group-hover:scale-105 transition">🚀</div>
+            <h4 class="text-xl font-semibold mb-3 text-stone-800">tech entrepreneurship</h4>
+            <p class="text-stone-600 leading-relaxed">
+              from zero to launch: lean product strategy, growth metrics, and resilient execution.
             </p>
           </div>
 
-          <div class="p-8 rounded-2xl border hover:shadow-lg transition">
-            <h4 class="text-xl font-semibold mb-3">📈 Digital Strategy</h4>
-            <p class="text-slate-600">
-              Aligning technology with business goals for long-term impact.
+          <div class="group p-8 rounded-3xl bg-white border border-amber-200/60 shadow-sm hover:shadow-xl hover:border-amber-300 transition-all duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-3xl mb-5 group-hover:scale-105 transition">📈</div>
+            <h4 class="text-xl font-semibold mb-3 text-stone-800">digital strategy</h4>
+            <p class="text-stone-600 leading-relaxed">
+              aligning product vision with business goals — creating impact that lasts.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Journey -->
-    <section id="journey" class="bg-slate-100">
-      <div class="max-w-6xl mx-auto px-6 py-20 text-center">
-        <h3 class="text-3xl font-bold mb-6">My Journey</h3>
-        <p class="text-lg text-slate-600 max-w-3xl mx-auto">
-          My journey as a techpreneur is driven by curiosity, continuous learning,
-          and the desire to create solutions that matter.
+    <!-- journey – earthy & personal -->
+    <section id="journey" class="bg-stone-800 text-stone-100">
+      <div class="max-w-6xl mx-auto px-6 py-28 text-center">
+        <span class="text-sm uppercase tracking-[0.2em] text-amber-400 font-semibold">path</span>
+        <h3 class="text-4xl font-bold mt-3 mb-8 text-white">my journey</h3>
+        <p class="text-lg text-stone-300 max-w-3xl mx-auto leading-relaxed">
+          It started with a simple question: <span class="italic text-amber-300">“can technology feel more human?”</span>  
+          Years later — after building startups, mentoring founders, and writing code at 3am — 
+          I’m still chasing that same spark. Every project is a new chapter.
         </p>
+        <!-- subtle stats / vibe -->
+        <div class="flex flex-wrap justify-center gap-10 mt-14 text-stone-200">
+          <div><span class="block text-4xl font-bold text-amber-300">7+</span> <span class="text-sm uppercase tracking-wide">years building</span></div>
+          <div><span class="block text-4xl font-bold text-amber-300">15+</span> <span class="text-sm uppercase tracking-wide">products launched</span></div>
+          <div><span class="block text-4xl font-bold text-amber-300">∞</span> <span class="text-sm uppercase tracking-wide">curiosity</span></div>
+        </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section id="connect" class="max-w-7xl mx-auto px-6 py-20 text-center">
-      <div class="bg-indigo-600 text-white rounded-3xl p-14">
-        <h3 class="text-3xl font-bold mb-4">Let’s Build Something Meaningful</h3>
-        <p class="text-indigo-100 mb-8 max-w-xl mx-auto">
-          Whether you’re a founder, student, or business — let’s collaborate
-          and bring your ideas to life.
-        </p>
-        <button class="bg-white text-indigo-700 px-10 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition">
-          Get in Touch
-        </button>
+    <!-- cta – warm, inviting, with a fresh earthy cta -->
+    <section id="connect" class="max-w-6xl mx-auto px-6 py-28">
+      <div class="bg-gradient-to-br from-amber-700 to-orange-600 text-white rounded-4xl p-14 md:p-18 shadow-2xl">
+        <div class="max-w-3xl mx-auto text-center">
+          <h3 class="text-4xl font-bold mb-4">let’s build something meaningful</h3>
+          <p class="text-amber-100 mb-8 text-lg max-w-2xl mx-auto">
+            whether you're a founder with a napkin sketch, a business ready to scale, 
+            or just someone with a big idea — i’d love to hear it.
+          </p>
+          <button class="bg-white text-amber-800 px-12 py-5 rounded-xl font-semibold text-lg shadow-xl hover:bg-amber-50 hover:scale-[1.02] transition-all duration-200 inline-flex items-center gap-2">
+            start a conversation <span class="text-xl">→</span>
+          </button>
+          <p class="text-sm text-amber-200/80 mt-8">ella@buildwith.ella · response within 24h</p>
+        </div>
       </div>
     </section>
-
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-slate-900 text-slate-400">
-    <div class="max-w-7xl mx-auto px-6 py-8 text-center">
-      <p>&copy; 2026 Ella. Techpreneur. All rights reserved.</p>
+  <!-- footer – dark but warm -->
+  <footer class="bg-stone-900 text-stone-400 border-t border-stone-700">
+    <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-3">
+      <p class="text-sm">© 2026 ella · techpreneur · all rights reserved</p>
+      <p class="text-sm text-stone-500">crafted with ☕ and purpose</p>
     </div>
   </footer>
 
-  <!-- Mobile Menu Script -->
+  <!-- mobile menu script (improved) -->
   <script>
-    const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
 
-      const expanded =
-        menuBtn.getAttribute("aria-expanded") === "true";
-      menuBtn.setAttribute("aria-expanded", !expanded);
+      // update aria-expanded
+      const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', !expanded);
+    });
+
+    // close mobile menu automatically when a link is clicked (nice ux)
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      });
     });
   </script>
-
 </body>
 </html>
